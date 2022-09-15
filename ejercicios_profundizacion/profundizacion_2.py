@@ -33,7 +33,7 @@ de bucle/condicionales y luego intentarlo con comprension de listas
 if __name__ == '__main__':
     print('Comenzamos a ponernos serios!')
 
-    padron = ['A', 'E', 'J', 'T']
+    padron = ['A', 'E', 'J', 'T', 'S', 'L']
 
     nombres = ['Tamara', 'Marcelo', 'Martin', 'Juan', 'Alberto', 'Exequiel',
                'Alejandro', 'Leonel', 'Antonio', 'Omar', 'Antonia', 'Amalia',
@@ -45,4 +45,6 @@ if __name__ == '__main__':
     # Se espera obtener:
     # ['Tamara', 'Juan', 'Alberto'......]
 
+    nombres_filtrados = [x for x in nombres if x[0] in padron]
+    print(nombres_filtrados)
     print("terminamos")

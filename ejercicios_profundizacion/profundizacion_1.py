@@ -27,10 +27,33 @@ que ya dispongamos de Python. El objetivo es:
         la suma y los números recoletados
     b) Si el número es mayor a 21 se debe informar al usuario que perdio
 '''
+import random as rdm
+
+def generar_lista():
+
+    lista_3 = [rdm.randint(1, 10) for x in range(3)]
+
+    return lista_3
+
+def operar(lista):
+
+    suma = sum(lista)
+    
+    if(suma < 21):
+        print(suma)
+        print(lista)
+    else:
+        print('La suma excedio 21')
+
+    pass
+    
 
 if __name__ == '__main__':
     print('Comenzamos a divertirnos!')
     # A partir de aquí escriba el código que resuelve el enunciado
     # Leer el enunciado con atención y consultar cualquier duda
+
+    lista = generar_lista()
+    operar(lista)
 
     print("terminamos")
